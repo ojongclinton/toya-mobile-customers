@@ -1,0 +1,38 @@
+{
+  "start_location": "string",
+  "end_location": "string",
+  "prestation": "economy",
+  "distance": "-97612.0",
+  "final_price": "182620.4",
+  "is_price_promotion": true,
+  "code_promo": "string",
+  "lon_start_location": 0,
+  "lon_end_location": 0,
+  "lat_start_location": 0,
+  "lat_end_location": 0
+}
+marche central de douala
+Cimetière de New Bell
+const getOptimalDistance = async (latitudeDepart, longitudeDepart, latitudeArrivee, longitudeArrivee) => {
+    const url = `https://router.project-osrm.org/route/v1/driving/${longitudeDepart},${latitudeDepart};${longitudeArrivee},${latitudeArrivee}?overview=false`;
+  
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+  
+      if (data && data.routes && data.routes.length > 0) {
+        const distanceInMeters = data.routes[0].distance; 
+        const distan= parseInt(distanceInMeters)
+        console.log(`La distance optimale par la route est de ${distanceInMeters.toFixed(2)} m`);
+        estimateRide(distan);
+        setdistance(distan);
+        return distanceInMeters.toFixed(2);
+      } else { 
+        console.log("Impossible de trouver une route entre les deux points");
+        return null;
+      }
+    } catch (error) {
+      console.error("Erreur lors de la récupération de la distance :", error);
+      return null;
+    }
+  };

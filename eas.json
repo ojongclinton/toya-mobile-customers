@@ -1,0 +1,65 @@
+{
+  "cli": {
+    "version": ">= 13.2.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_ROUTER_DISABLE_RN_NAVIGATION_CHECK": "1",
+        "EXPO_PUBLIC_BASE_URL": "https://toya-backend-production.up.railway.app/api",
+        "EXPO_PUBLIC_WS_BASE_URL": "wss://toya-backend-production.up.railway.app",
+        "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY_IOS": "AIzaSyB8kCReojyA1Ca5Cj-pTcveztmxuNAliLo",
+        "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY_ANDROID": "AIzaSyDxq5M5YGlGYjd3u7PakfxLE1fBq2LOHNc",
+        "EXPO_PUBLIC_GOOGLE_PLACES_WEB_API_KEY": "AIzaSyAjtAJjSgJ7IuCk9RsgNtluqExZ2oLU6V8"
+      },
+      "android": {
+        "buildType": "apk",
+        "image": "latest"
+      },
+      "ios": {
+        "simulator": true,
+        "image": "latest"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "EXPO_ROUTER_DISABLE_RN_NAVIGATION_CHECK": "1",
+        "EXPO_PUBLIC_BASE_URL": "https://toya-backend-production.up.railway.app/api",
+        "EXPO_PUBLIC_WS_BASE_URL": "wss://toya-backend-production.up.railway.app",
+        "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY_IOS": "AIzaSyB8kCReojyA1Ca5Cj-pTcveztmxuNAliLo",
+        "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY_ANDROID": "AIzaSyDxq5M5YGlGYjd3u7PakfxLE1fBq2LOHNc",
+        "EXPO_PUBLIC_GOOGLE_PLACES_WEB_API_KEY": "AIzaSyAjtAJjSgJ7IuCk9RsgNtluqExZ2oLU6V8"
+      },
+      "android": {
+        "buildType": "apk",
+        "image": "latest"
+      },
+      "ios": {
+        "image": "latest"
+      }
+    },
+    "production": {
+      "env": {
+        "EXPO_ROUTER_DISABLE_RN_NAVIGATION_CHECK": "1",
+        "EXPO_PUBLIC_BASE_URL": "https://toya-backend-production.up.railway.app/api",
+        "EXPO_PUBLIC_WS_BASE_URL": "wss://toya-backend-production.up.railway.app",
+        "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY_IOS": "AIzaSyB8kCReojyA1Ca5Cj-pTcveztmxuNAliLo",
+        "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY_ANDROID": "AIzaSyDxq5M5YGlGYjd3u7PakfxLE1fBq2LOHNc",
+        "EXPO_PUBLIC_GOOGLE_PLACES_WEB_API_KEY": "AIzaSyAjtAJjSgJ7IuCk9RsgNtluqExZ2oLU6V8"
+      },
+      "ios": {
+        "image": "latest",
+        "resourceClass": "m-medium"
+      },
+      "android": {
+        "image": "latest"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

@@ -1,0 +1,8 @@
+const BASE_URL = process.env.EXPO_PUBLIC_BASE_URL;
+export const WS_BASE_URL = process.env.EXPO_PUBLIC_WS_BASE_URL;
+
+export const GOOGLE_MAPS_API_KEY_IOS = process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY_IOS;
+export const GOOGLE_MAPS_API_KEY_ANDROID = process.env.EXPO_PUBLIC_GOOGLE_MAPS_API_KEY_ANDROID;
+export const GOOGLE_PLACES_WEB_API_KEY = process.env.EXPO_PUBLIC_GOOGLE_PLACES_WEB_API_KEY;
+
+export default BASE_URL;
