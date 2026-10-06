@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1046749377981",
+    "project_id": "toya-app-messaging",
+    "storage_bucket": "toya-app-messaging.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046749377981:android:f092e14644d7fb5b3c8ed4",
+        "android_client_info": {
+          "package_name": "com.toyavtc.toya"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVTSsfyL0JWx8HRHNvGthUB8451lMDURM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
