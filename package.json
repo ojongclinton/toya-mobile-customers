@@ -34,7 +34,8 @@
     "web": "expo start --web",
     "test": "jest --watchAll",
     "lint": "expo lint",
-    "postinstall": "node fix-react-native-maps.js"
+    "postinstall": "node fix-react-native-maps.js",
+    "eas-build-post-install": "node scripts/prepare-google-services.js"
   },
   "jest": {
     "preset": "jest-expo"

@@ -45,6 +45,8 @@
       "channel": "preview"
     },
     "production": {
+      "environment": "production",
+      "autoIncrement": true,
       "env": {
         "EXPO_ROUTER_DISABLE_RN_NAVIGATION_CHECK": "1",
         "EXPO_PUBLIC_BASE_URL": "https://api.toya-vtc.com/api",
